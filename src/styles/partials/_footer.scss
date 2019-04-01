@@ -1,0 +1,27 @@
+//Footer
+
+.social {
+  font-weight: bold;
+  font-family: $simple-font;
+  font-size: 0.8em;
+  margin: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  .social__link {
+    float: left;
+    color: $color-light;
+    .social__link--email {
+      text-decoration: none;
+      color: $color-dark;
+    }
+  }
+  .social__follow {
+    float: right;
+    color: $color-light;
+    .fab {
+      display: inline-block;
+      padding-left: 10px;
+      color: $color-inactive;
+    }
+  }
+}

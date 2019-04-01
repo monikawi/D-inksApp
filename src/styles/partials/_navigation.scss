@@ -1,0 +1,54 @@
+//Navigation
+
+@mixin highlight() {
+  &:before {
+    content: "";
+    position: absolute;
+    left: 35%;
+    bottom: 0;
+    width: 30%;
+    border-bottom: 2px solid $color-inactive;
+  }
+}
+
+
+nav {
+  padding-top: 15px;
+  .nav {
+    font-family: $simple-font;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    list-style-type: none;
+    padding: 15px;
+    .nav__list-item {
+      display: inline;
+      .list-item__link {
+        color: $color-inactive;
+        text-decoration: none;
+        padding: 10px;
+        line-height: 1.8;
+        padding-bottom: 5px;
+        position: relative;
+        &:hover {
+          color: $color-active;
+          @include highlight();
+        }
+      }
+      .list-item__link--active {
+        color: $color-active;
+        padding-bottom: 5px;
+        position: relative;
+        @include highlight();
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 700px) {
+  .list-item__link {
+    display: block;
+  } 
+}

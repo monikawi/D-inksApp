@@ -1,0 +1,24 @@
+//General Layout
+
+body { 
+  margin: 20px;
+}
+
+.logo {
+  display: inline;
+  border: 2px solid $color-dark;
+  color: $color-dark;
+  padding: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 40px;
+  font-size: 1.5em;
+  font-family: $logo-font;
+}
+
+.container {
+  background: $bg-color;
+  margin-top: -10px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
